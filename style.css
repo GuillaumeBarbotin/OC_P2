@@ -129,3 +129,34 @@ h5 {
 .reco {
     display: flex;
 }
+/* RESPONSIVE DESIGN */
+/* RD extra-small => portables format portrait */
+@media (max-width: 575.98px) {
+    .container {
+        width: 90%;
+    }
+}
+/* RD small => portables format paysage */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        width: 540px;
+    }
+}
+/* RD medium => tablettes */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        width: 720px;        
+    }
+}
+/* RD large => écrans PC < 12 pouces */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        width: 960px;
+    }
+}
+/* RD extra-large => écrans PC > 12 pouces et TV */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
