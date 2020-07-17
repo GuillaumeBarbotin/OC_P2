@@ -192,12 +192,14 @@ h5 {
     h2 {
         font-size: 1.7rem;
     }
+    figure img {
+        margin: 1rem 0 1rem;
+    }
     .contact {
         text-align: center;
     }
-    .content {
-        margin-left: 1rem;
-        margin-bottom: 1rem;
+    .content {        
+        margin: 0 0 1rem 1rem;
     }
     .aside h3 {
         font-size: 1.7rem;
@@ -213,7 +215,7 @@ h5 {
     .article {
         margin-bottom: 1rem;
     }
-    .loisirs i {
+    .loisirs {
         margin-bottom: 1rem;
     }
     h4 {
@@ -234,6 +236,7 @@ h5 {
     }
     h1 {
         font-size: 3rem;
+        text-align: center;
     }
     h2 {
         font-size: 1.5rem;
@@ -254,6 +257,7 @@ h5 {
         margin-bottom: 1rem;
     }
     .reco {
+        flex-direction: column;
         margin-bottom: 1rem;
     }
     h4 {
