@@ -263,8 +263,7 @@ h5 {
     h4 {
         font-size: 1.2rem;
     }
-    .reco .article {
-        justify-content: space-between;
+    .reco article {        
         margin-bottom: 1rem;
     }
 }
