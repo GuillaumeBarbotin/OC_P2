@@ -29,14 +29,14 @@ p {
 figure {
     flex-basis: 30%;
     flex-shrink: 0;
-    background-color: #00B0FF;
+    background-color: #FBC02D;
     text-align: center;
 }
 figure img {
     height: 190px;
     width: 190px;
     border-radius: 50%;
-    border: solid 2px #607D8B;
+    border: solid 2px #FBC02D;
     margin: 3rem 0 2rem;
 }
 .title {
@@ -51,20 +51,20 @@ h1 {
     margin-bottom: 1rem;
 }
 h1 span {
-    color: #00B0FF;
+    color: #FBC02D;
     font-weight: bold;
 }
 h2 {
     font-size: 1.8rem;
 }
 h2 span {
-    border-bottom: solid 2px #00B0FF;
+    border-bottom: solid 2px #FBC02D;
 }
 /* Propriétés de <.aside> */
 .aside {
     flex-basis: 30%;
     flex-shrink: 0;
-    background-color: #00B0FF;
+    background-color: #FBC02D;
     display: flex;
     flex-direction: column;
 }
@@ -72,9 +72,9 @@ h2 span {
     flex-grow: 1;
 }
 .aside h3 {
-    background-color: #607D8B;
+    background-color: #474747;
     font-size: 1.8rem;
-    color: #00B0FF;
+    color: #FBC02D;
     text-align: center;
     padding: .5rem 0;
     margin-bottom: 2rem;
@@ -97,7 +97,7 @@ h2 span {
 .loisirs i {
     height: 60px;
     width: 60px;
-    color: #607D8B;    
+    color: #474747;    
 }
 /* Propriétés de <.content> */
 .content {
@@ -107,12 +107,12 @@ h2 span {
     font-size: 2rem;
     font-weight: bold;
     padding-bottom: .6rem;
-    border-bottom: solid 2px #00B0FF;
+    border-bottom: solid 2px #FBC02D;
     margin: 1rem 0 3rem 0;
     display: flex;
 }
 .content h3 i {
-    color: #00B0FF;
+    color: #FBC02D;
     margin-right: 2rem;
 }
 .article {
@@ -129,7 +129,7 @@ aside {
     display: flex;
 }
 aside i {
-    color: #00B0FF;
+    color: #FBC02D;
     margin-right: 1rem;
 }
 h4 {
@@ -264,6 +264,7 @@ h5 {
         font-size: 1.2rem;
     }
     .reco .article {
+        justify-content: space-between;
         margin-bottom: 1rem;
     }
 }
