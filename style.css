@@ -1,12 +1,12 @@
 /* Police de caractère */
 @font-face {
     font-family: 'aliceregular';
-    src: url('Alice-Regular-webfont.eot');
-    src: url('Alice-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Alice-Regular-webfont.woff2') format('woff2'),
-         url('Alice-Regular-webfont.woff') format('woff'),
-         url('Alice-Regular-webfont.ttf') format('truetype'),
-         url('Alice-Regular-webfont.svg#aliceregular') format('svg');
+    src: url('font/Alice-Regular-webfont.eot');
+    src: url('font/Alice-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Alice-Regular-webfont.woff2') format('woff2'),
+         url('font/Alice-Regular-webfont.woff') format('woff'),
+         url('font/Alice-Regular-webfont.ttf') format('truetype'),
+         url('font/Alice-Regular-webfont.svg#aliceregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -108,7 +108,7 @@ h2 span {
     font-weight: bold;
     padding-bottom: .6rem;
     border-bottom: solid 2px #FBC02D;
-    margin: 1rem 2rem 3rem 0;
+    margin: 1rem 0 3rem 0;
     display: flex;
 }
 .content h3 i {
@@ -144,10 +144,84 @@ h5 {
     display: flex;
 }
 /* RESPONSIVE DESIGN */
-/* RD extra-small => portables format portrait */
-@media (max-width: 575.98px) {
+/* RD extra-large => écrans PC > 12 pouces et TV */
+@media (min-width: 1200px) {
     .container {
-        width: 90%;
+        width: 1140px;
+    }
+}
+/* RD large => écrans PC < 12 pouces */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        width: 960px;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    .aside h3 {
+        font-size: 1.7rem;
+    }
+    .content h3 {
+        font-size: 1.8rem;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+}
+/* RD medium => tablettes */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        width: 720px;
+        flex-direction: column;
+    }
+    .aside {
+        order: 2;
+    }
+    .title {
+        align-items: center;
+        margin: 3rem auto;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .aside h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .aside div {
+        margin: 1rem;
+    }
+    .contact {
+        text-align: center;
+    }
+    .loisirs i {
+        margin-bottom: 1rem;
+    }
+    .content {
+        margin-left: 1rem;
+    }
+    .content h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    .article {
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
 }
 /* RD small => portables format paysage */
@@ -156,21 +230,24 @@ h5 {
         width: 540px;
     }
 }
-/* RD medium => tablettes */
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* RD extra-small => portables format portrait */
+@media (max-width: 575.98px) {
     .container {
-        width: 720px;        
+        width: 90%;
     }
-}
-/* RD large => écrans PC < 12 pouces */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .container {
-        width: 960px;
+    .title {        
+        margin: 2rem auto;
     }
-}
-/* RD extra-large => écrans PC > 12 pouces et TV */
-@media (min-width: 1200px) {
-    .container {
-        width: 1140px;
+    .content {
+        margin-left: .5rem;
+    }
+    .article {
+        flex-direction: column;
+    }
+    aside {
+        margin-bottom: 1rem;
+    }
+    .reco {
+        margin-bottom: 1rem;
     }
 }
