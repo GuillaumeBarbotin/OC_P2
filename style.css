@@ -154,7 +154,28 @@ h5 {
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .container {
         width: 960px;
+    }    
+}
+/* RD medium => tablettes */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        width: 720px;        
+    }    
+}
+/* RD small => portables format paysage */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        width: 540px;
     }
+}
+/* RD extra-small => portables format portrait */
+@media (max-width: 575.98px) {
+    .container {
+        width: 90%;
+    }    
+}
+/* RD global-1 => écrans < 1200 pixels */
+@media (max-width: 1200px) {
     h1 {
         font-size: 3.5rem;
     }
@@ -171,10 +192,9 @@ h5 {
         font-size: 1.3rem;
     }
 }
-/* RD medium => tablettes */
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* RD global-2 => écrans < 992 pixels */
+@media (max-width: 992px) {
     .container {
-        width: 720px;
         flex-direction: column;
     }
     .aside {
@@ -222,32 +242,26 @@ h5 {
     p {
         font-size: 1rem;
         line-height: 1.2rem;
-    }
+    }    
 }
-/* RD small => portables format paysage */
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .container {
-        width: 540px;
-    }
-}
-/* RD extra-small => portables format portrait */
-@media (max-width: 575.98px) {
-    .container {
-        width: 90%;
-    }
+/* RD global-3 => écrans < 768 pixels */
+@media (max-width: 768px) {
     .title {        
         margin: 2rem auto;
     }
     .content {
         margin-left: .5rem;
-    }
-    .article {
-        flex-direction: column;
-    }
+    }    
     aside {
         margin-bottom: 1rem;
     }
     .reco {
         margin-bottom: 1rem;
-    }
+    }    
+}
+/* RD global-4 => écrans < 576 pixels */
+@media (max-width: 576px) {    
+    .article {
+        flex-direction: column;
+    }    
 }
